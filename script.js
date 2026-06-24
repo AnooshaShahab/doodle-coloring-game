@@ -11,7 +11,7 @@
   { name: 'Fruit', src: './assets/fruit.jfif' }, 
   { name: 'Giraffe', src: './assets/giraffe.jfif' },
   { name: 'Hei Hei', src: './assets/heihei.jfif' },
-  { name: 'Labubu', src: './assets/labubu.jfif' }, { name: 'Pineapple', src: './assets/pineapple.jfif' },
+  { name: 'Labubu', src: './assets/labubu.jfif' }, { name: 'Pineapple', src: './assets/Pineapple.jfif' },
   { name: 'Penguin', src: './assets/penguin.jfif' }, { name: 'Whale', src: './assets/whale.jfif' }, { name: 'Octopus', src: './assets/octopus.jfif' }, { name: 'Monkey', src: './assets/monkey.jfif' }, { name: 'Rocket', src: './assets/rocket.jfif' }, { name: 'Tiger', src: './assets/tiger.jfif' }, { name: 'Ice Cream', src: './assets/ice cream.jfif' }, { name: 'Dinosaur', src: './assets/Dinosaur.jfif' }, { name: 'Dog', src: './assets/dog.jfif' }, { name: 'Butterfly', src: './assets/butterfly.jfif' }, { name: 'Calf', src: './assets/calf.jfif' }, { name: 'Bear', src: './assets/bear.jfif' }, { name: 'Cat', src: './assets/cat.jfif' }, { name: 'Capybara', src: './assets/capybara.jfif' },
  { name: 'Tulip', src: './assets/tulip.jfif' },
 { name: 'Strawberry', src: './assets/Strawberry.jfif' }
