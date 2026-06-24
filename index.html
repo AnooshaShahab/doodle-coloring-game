@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doodle Coloring Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <main class="app" aria-live="polite">
+    <section class="screen landing active" id="landingScreen">
+      <div class="floaters" aria-hidden="true">
+        <span style="--x:8%;--y:12%;--d:0s">✿</span>
+        <span style="--x:78%;--y:10%;--d:.7s">★</span> 
+        <span style="--x:18%;--y:74%;--d:1.1s">♡</span>
+        <span style="--x:88%;--y:66%;--d:.3s">☁</span>
+        <span style="--x:48%;--y:18%;--d:1.5s">✦</span>
+        <span style="--x:62%;--y:82%;--d:.9s">☀</span>
+        <span style="--x:30%;--y:34%;--d:1.8s">✎</span>
+        <span style="--x:72%;--y:38%;--d:1.3s">●</span>
+      </div>
+      <div class="landing-content">
+        <p class="kicker">Color, draw, and play</p>
+        <h1>Doodle Coloring Game</h1>
+        <button class="primary-btn" id="playBtn" type="button">Play</button>
+      </div>
+    </section>
+
+    <section class="screen picker" id="pickerScreen">
+      <header class="topbar">
+        <button class="ghost-btn" data-go="landingScreen" type="button">Back</button>
+        <h2>Pick a Picture</h2>
+      </header>
+      <div class="image-grid" id="imageGrid"></div>
+    </section>
+
+    <section class="screen studio" id="studioScreen">
+      <header class="topbar studio-bar">
+        <button class="ghost-btn" data-go="pickerScreen" type="button">Pictures</button>
+        <h2 id="studioTitle">Color Time</h2>
+        <button class="ghost-btn" id="saveBtn" type="button">Save</button>
+      </header>
+
+      <div class="tools" aria-label="Drawing tools">
+        <div class="palette" id="palette" aria-label="Color palette"></div>
+        <div class="tool-row">
+          <input id="colorPicker" type="color" value="#ff4f8b" aria-label="Brush color" />
+          <label class="range-label" for="brushSize">Brush</label>
+          <input id="brushSize" type="range" min="4" max="48" value="18" />
+          <button class="tool-btn selected" data-tool="brush" type="button">Brush</button>
+          <button class="tool-btn" data-tool="eraser" type="button">Eraser</button>
+          <button class="tool-btn" id="undoBtn" type="button">Undo</button>
+          <button class="tool-btn" id="clearBtn" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="baseCanvas" width="900" height="700"></canvas>
+        <canvas id="drawCanvas" width="900" height="700"></canvas>
+      </div>
+    </section>
+  </main> 
+  <script src="script.js"></script>
+</body>
+</html> 
